@@ -11,6 +11,8 @@ gem "puma", "~> 5.0"
 
 # use active record
 gem "sinatra-activerecord"
+gem "unirest"
+gem 'middleman'
 
 group :development do
   gem "better_errors"
