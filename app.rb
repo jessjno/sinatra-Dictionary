@@ -16,45 +16,25 @@ get("/definitions") do
 end
 
 post("/get_definition") do
-  #@define_word = params.fetch("user_word")
+  @define_word = params.fetch("user_word")
   # word_key = ENV.fetch("DEFINITION_KEY")
+  webster_key = ENV.fetch("WEBSTER_KEY")
+  ref = "sd3"
 
-  # # Construct the URL with proper encoding
-  # url = "https://wordsapiv1.p.mashape.com/words/#{URI.encode_www_form_component(@define_word)}"
+  url = URI("https://dictionaryapi.com/api/v3/references/#{ref}/json/#{@define_word}?key=#{webster_key}")
 
-  # # Make the API request
-  # response = Unirest.get url,
-  #                        headers: {
-  #                          ("X-mashape-Key") => word_key,
-  #                          ("Accept") => "application/json"
-  #                        }
-    # Process the response
-  #@string_response = response.body.to_s
 
-  #the below attempt gave me a  AccessDeniedAccess response
-  # api_url = "https://dictionaryapi.dev/#{@define_word}"
-  # @raw_response = HTTP.get(api_url)
-  # #raw_string = @raw_response.to_s
-    # # parsed_data = JSON.parse(@raw_string)
-  
-    
-  # Process the response
-  #@string_response = response.body.to_s
-  
- url = "https://www.carboninterface.com/api/v1/vehicle_make/dodge/vehicle_models"
-  #@raw_response = HTTP.get(url)
+  response = Net::HTTP.get(url)
 
- # url = ""https://www.carboninterface.com/api/v1/vehicle_makes""
+  definitions = JSON.parse(response)
 
-  carbon_key = ENV.fetch("CARBON_KEY")
-
-  response = Unirest.get url,
-                         headers: {
-                          ("Authorization") => carbon_key,
-                          ("Content-Type") => "application/json"
-
-                         }
-  @string_response = response.body.to_s
+# Example: Access the first definition
+if definitions.any?
+  first_definition = definitions[0]['shortdef'][0]
+  puts first_definition
+else
+  puts "No definitions found."
+end
 
   erb(:definition_results)
 end
