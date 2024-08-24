@@ -1,15 +1,24 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Translator</title>
+  </head>
+  <body>
 
-<link rel="stylesheet" href="style.css">
+  <h1>Translator</h1>
 
-<h1>Welcome to your Translator!</h1>
+  <form action="/get_translation" method="post">
 
-<form action="/get_translation" method="post">
+    <div>
+      <label for="translate">What would you like to translate?</label>
+    </div>
+    <div>
+      <input id="translate" type="text" name="translate_user_word"> 
+    </div>
+    
+    <button>Translate!</button>
 
-  <label for="translate">What would you like to translate?</label>
-  <input id="translate" type="text" name="translate_user_word"> 
-
-  <button>Translate!</button>
-
-</form>
+  </form>
+ </body>
 </html>

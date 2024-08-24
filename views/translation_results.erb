@@ -1,6 +1,22 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<h1>Word:</h1>
-<p><%= @translate_word %></p>
-<h2>Translation:</h2>
-<p><%= @first_definition %></p>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Translator</title>
+  </head>
+  <body>
+    <div>
+      <h1>Word:</h1>
+    </div>
+    <div>
+      <p><%= @translate_word %></p>
+    </div>
+    <div>
+      <h2>Translation:</h2>
+    </div>
+    <div>
+      <p><%= @response_string %></p>
+    </div>
+
+  </body>
+</html>

@@ -1,15 +1,24 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary</title>
+  </head> 
+  <body>
 
-<link rel="stylesheet" href="style.css">
+  <h1>Dictionary</h1>
 
-<h1>Welcome to your Dictionary!</h1>
+  <form action="/get_definition" method="post">
+    <div>
+      <label for="definition">What would you like to define?</label>
+    </div>
 
-<form action="/get_definition" method="post">
-
-  <label for="definition">What would you like to define?</label>
-  <input id="definition" type="text" name="user_word"> 
+    <div>
+      <input id="definition" type="text" name="user_word"> 
+    </div>
 
   <button>Define!</button>
   
-</form>
+  </form>
+  </body>
 </html>

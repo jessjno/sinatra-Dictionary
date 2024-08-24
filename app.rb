@@ -31,6 +31,9 @@ post("/get_definition") do
 if @definitions.any?
   @first_definition = @definitions[0]['shortdef'][0]
   puts @first_definition
+  if @definitions.any?
+    @second_definition = @definitions[2]['shortdef'][0]
+  end
 else
   puts "No definitions found."
 end
@@ -46,23 +49,15 @@ post("/get_translation") do
   @translate_word = params.fetch("translate_user_word")
   translate_key = ENV.fetch("TRANSLATE_KEY")
   ref = "spanish"
-
+  
   url = URI("https://dictionaryapi.com/api/v3/references/spanish/json/#{ref}/json/#{@translate_word}?key=#{translate_key}")
 
 
   response = Net::HTTP.get(url)
 
-  response_string = response.to_s
+  @response_string = response.to_s
 
-  @translation = JSON.parse(response_string)
-
- #Example: Access the first translation
- if @translation.any?
-   @first_translation = @translation.at(0).each
-   puts @first_translation
- else
-   puts "No translation found."
- end
+  #@translation = JSON.parse(response_string)
 
   erb(:translation_results)
 end

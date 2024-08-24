@@ -3,6 +3,7 @@ h1 {
   font-size: 20px; 
   color: #8D493A; 
   background-color: #DFD3C3;
+  display: inline-block;
 }
 
 h2 {
@@ -10,6 +11,7 @@ h2 {
   font-size: 20px; 
   color: #8D493A; 
   background-color: #DFD3C3;
+  display: inline-block;
 }
 
 label {
@@ -17,6 +19,7 @@ label {
   font-size: 20px; 
   color: #8D493A; 
   background-color: #DFD3C3;
+  display: inline-block;
 }
 
 p {
@@ -24,6 +27,7 @@ p {
   font-size: 20px; 
   color: #8D493A; 
   background-color: #DFD3C3;
+  display: inline-block;
 }
 
 form {

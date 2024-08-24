@@ -1,6 +1,28 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<h1>Word:</h1>
-<p><%= @define_word %></p>
-<h2>Definition:</h2>
-<p><%= @first_definition %></p>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Definition</title>
+  </head>
+  <body>
+    <div>
+      <h1>Word:</h1>
+    </div> 
+
+    <div>
+      <p><%= @define_word %></p>
+    </div>
+
+    <div>
+      <h2>Definition:</h2>
+    </div>
+
+    <div>
+      <p>1. <%= @first_definition %></p>
+    </div>
+
+    <div>
+      <p>2. <%= @second_definition %></p>
+    </div>
+  </body>
+ </html>
