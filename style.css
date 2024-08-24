@@ -48,3 +48,17 @@ body {
   text-align: center; 
   background: #F8EDE3;
 }
+
+button {  
+  display: inline-block;
+  justify-content: center;
+  background-color: #DFD3C3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 15px;
+}
+
+button:hover {
+  background-color: #D0B8A8;
+}

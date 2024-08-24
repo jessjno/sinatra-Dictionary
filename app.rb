@@ -30,19 +30,12 @@ post("/get_definition") do
 # Example: Access the first definition
 if @definitions.any?
   @first_definition = @definitions[0]['shortdef'][0]
-  puts @first_definition
-  if @definitions.any?
-    @second_definition = @definitions[2]['shortdef'][0]
-  end
+    puts @first_definition 
 else
   puts "No definitions found."
 end
 
   erb(:definition_results)
-end
-
-get("/translate") do
-  erb(:translation_form)
 end
 
 get("/translate") do
@@ -70,20 +63,3 @@ post("/get_translation") do
   end 
   erb(:translation_results)
 end
-
-# post("/get_translation") do
-#   @translate_word = params.fetch("translate_user_word")
-#   translate_key = ENV.fetch("TRANSLATE_KEY")
-#   ref = "spanish"
-  
-#   url = URI("https://dictionaryapi.com/api/v3/references/spanish/json/#{ref}/json/#{@translate_word}?key=#{translate_key}")
-
-
-#   response = Net::HTTP.get(url)
-
-#   @response_string = response.to_s
-
-#   #@translation = JSON.parse(response_string)
-
-#   erb(:translation_results)
-# end
