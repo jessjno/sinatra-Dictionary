@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Dictionary</title>
   </head> 
   <body>
-
+    <div>
+      <img class="books" src="/images/books.jpg" alt="Books Icon">
+    </div>
   <h1>Dictionary</h1>
 
   <form action="/get_definition" method="post">
@@ -15,7 +20,7 @@
     </div>
 
     <div>
-      <input id="definition" type="text" name="user_word"> 
+      <input id="definition" type="text" name="user_word" required> 
     </div>
 
   <button>Define!</button>

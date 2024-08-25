@@ -4,6 +4,7 @@ h1 {
   color: #8D493A; 
   background-color: #DFD3C3;
   display: inline-block;
+  font-family: "Oswald";
 }
 
 h2 {
@@ -12,6 +13,7 @@ h2 {
   color: #8D493A; 
   background-color: #DFD3C3;
   display: inline-block;
+  font-family: "Oswald";
 }
 
 label {
@@ -20,6 +22,7 @@ label {
   color: #8D493A; 
   background-color: #DFD3C3;
   display: inline-block;
+  font-family: "Oswald";
 }
 
 p {
@@ -28,13 +31,14 @@ p {
   color: #8D493A; 
   background-color: #DFD3C3;
   display: inline-block;
+  font-family: "Oswald";
 }
 
 form {
   text-align: center; 
   color:#333; 
   font-size: 25px; 
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Oswald";
 }
 
 table {
@@ -49,16 +53,48 @@ body {
   background: #F8EDE3;
 }
 
+input {
+  width: 175px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #DFD3C3;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
 button {  
+  font-family: "Oswald";
   display: inline-block;
   justify-content: center;
   background-color: #DFD3C3;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  width: 30px;
+  width: 150px;
 }
 
 button:hover {
   background-color: #D0B8A8;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+  border-radius: 5px;
+}
+
+.spanish {
+  width: 300px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.books {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
 }

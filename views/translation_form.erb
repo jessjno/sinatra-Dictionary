@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Translator</title>
   </head>
   <body>
-
+  <div>
+    <img class="spanish" src="/images/Spanish.jpeg" alt="Spanish Icon">
+  <div>
   <h1>Translator</h1>
 
   <form action="/get_translation" method="post">
@@ -15,7 +20,7 @@
       <label for="translate">What would you like to translate?</label>
     </div>
     <div>
-      <input id="translate" type="text" name="translate_user_word"> 
+      <input id="translate" type="text" name="translate_user_word" required> 
     </div>
     
     <button>Translate!</button>
