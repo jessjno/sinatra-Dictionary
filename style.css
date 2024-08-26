@@ -1,37 +1,38 @@
 h1 {
   text-align: center; 
-  font-size: 20px; 
+  font-size: 50px; 
+  padding: 0px;
   color: #8D493A; 
-  background-color: #DFD3C3;
   display: inline-block;
   font-family: "Oswald";
+  border-color: #8D493A solid;
 }
 
 h2 {
   text-align: center; 
-  font-size: 20px; 
+  font-size: 40px; 
+  padding: 0px;
   color: #8D493A; 
-  background-color: #DFD3C3;
   display: inline-block;
   font-family: "Oswald";
 }
 
 label {
   text-align: center; 
-  font-size: 20px; 
+  font-size: 50px; 
   color: #8D493A; 
-  background-color: #DFD3C3;
   display: inline-block;
   font-family: "Oswald";
 }
 
 p {
   text-align: center; 
-  font-size: 20px; 
+  font-size: 40px; 
   color: #8D493A; 
   background-color: #DFD3C3;
   display: inline-block;
   font-family: "Oswald";
+  padding: 0px;
 }
 
 form {
@@ -48,7 +49,7 @@ table {
 }
 
 body {
-  padding: 70px 0; 
+  padding: 50px 0; 
   text-align: center; 
   background: #F8EDE3;
 }
@@ -68,6 +69,8 @@ input:focus {
 
 button {  
   font-family: "Oswald";
+  font-size: 20px;
+  color: #8D493A;
   display: inline-block;
   justify-content: center;
   background-color: #DFD3C3;
@@ -81,15 +84,36 @@ button:hover {
   background-color: #D0B8A8;
 }
 
-img {
-  width: 128px;
-  height: 128px;
+.homebutton {
+  justify-content: left;
+}
+
+.home {
+  font-family: "Oswald";
+  font-size: 15px;
+  color: #8D493A;
+  background-color: #DFD3C3;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  width: 150px;
+  justify-content: left;
+}
+
+.home:hover {
+  background-color: #D0B8A8;
+}
+
+img {
+  width: 228px;
+  height: 228px;
+  border-radius: 5px;
+  padding: 0;
 }
 
 .spanish {
-  width: 300px;
-  height: 120px;
+  width: 600px;
+  height: 220px;
   border-radius: 5px;
 }
 
