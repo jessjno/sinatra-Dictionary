@@ -84,10 +84,6 @@ button:hover {
   background-color: #D0B8A8;
 }
 
-.homebutton {
-  justify-content: left;
-}
-
 .home {
   font-family: "Oswald";
   font-size: 15px;
@@ -97,7 +93,7 @@ button:hover {
   border: none;
   border-radius: 5px;
   width: 150px;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .home:hover {
