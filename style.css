@@ -84,7 +84,7 @@ button:hover {
   background-color: #D0B8A8;
 }
 
-.home {
+.homebutton {
   font-family: "Oswald";
   font-size: 15px;
   color: #8D493A;
@@ -93,10 +93,11 @@ button:hover {
   border: none;
   border-radius: 5px;
   width: 150px;
-  justify-content: flex-start;
+  position: absolute;
+  left: 0;
 }
 
-.home:hover {
+.homebutton:hover {
   background-color: #D0B8A8;
 }
 
