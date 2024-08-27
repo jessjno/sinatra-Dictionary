@@ -1,11 +1,19 @@
+/* General Styles */
+body {
+  padding: 50px 0; 
+  text-align: center; 
+  background: #F8EDE3;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
 h1 {
   text-align: center; 
   font-size: 50px; 
   padding: 0px;
   color: #8D493A; 
   display: inline-block;
-  font-family: "Oswald";
-  border-color: #8D493A solid;
+  border: 2px solid #8D493A;
 }
 
 h2 {
@@ -14,7 +22,6 @@ h2 {
   padding: 0px;
   color: #8D493A; 
   display: inline-block;
-  font-family: "Oswald";
 }
 
 label {
@@ -22,7 +29,6 @@ label {
   font-size: 50px; 
   color: #8D493A; 
   display: inline-block;
-  font-family: "Oswald";
 }
 
 p {
@@ -31,15 +37,13 @@ p {
   color: #8D493A; 
   background-color: #DFD3C3;
   display: inline-block;
-  font-family: "Oswald";
   padding: 0px;
 }
 
 form {
   text-align: center; 
-  color:#333; 
+  color: #333; 
   font-size: 25px; 
-  font-family: "Oswald";
 }
 
 table {
@@ -48,12 +52,7 @@ table {
   color: #8D493A; 
 }
 
-body {
-  padding: 50px 0; 
-  text-align: center; 
-  background: #F8EDE3;
-}
-
+/* Input and Button Styles */
 input {
   width: 175px;
   padding: 10px;
@@ -68,11 +67,10 @@ input:focus {
 }
 
 button {  
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
   color: #8D493A;
   display: inline-block;
-  justify-content: center;
   background-color: #DFD3C3;
   padding: 10px 20px;
   border: none;
@@ -85,22 +83,24 @@ button:hover {
 }
 
 .homebutton {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 15px;
-  color: #8D493A;
-  background-color: #DFD3C3;
+  color: #FFFFFF; 
+  background-color: #8D493A; 
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   width: 150px;
-  position: absolute;
-  left: 0;
+  position: fixed; 
+  top: 20px; 
+  left: 20px; 
 }
 
 .homebutton:hover {
-  background-color: #D0B8A8;
+  background-color: #6F2D1F; 
 }
 
+/* Image Styles */
 img {
   width: 228px;
   height: 228px;
